@@ -1,0 +1,142 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: outfitFont;
+    src: url('assets/fonts/outfit/Outfit-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: youngSerifFont;
+    src: url('assets/fonts/young-serif/YoungSerif-Regular.ttf');
+}
+
+body {
+    margin: 0;
+    background-color: hsl(30, 54%, 90%);
+    color: hsl(30, 10%, 34%);
+    font-family: outfitFont;
+}
+
+.container {
+    max-width: 768px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.container__article {
+    padding: 2.5rem;
+    padding-top: 0;
+}
+
+h1,
+h2 {
+    font-family: youngSerifFont;
+    font-weight: 400;
+}
+
+ul,
+ol {
+    padding-left: 20px;
+}
+
+p {
+    line-height: 1.5rem;
+}
+
+li>p {
+    padding-left: 1em;
+}
+
+table {
+    margin: 0 auto;
+    width: 100%;
+    border-collapse: collapse
+}
+
+tr:not(:first-child) {
+    border-top: 1px solid hsl(30, 18%, 87%);
+}
+
+td,
+th {
+    width: 50%;
+    text-align-last: left;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+th {
+    font-weight: normal;
+    padding-left: 3ch;
+    padding-right: 3ch;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    padding: 0;
+}
+
+.prep-time {
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 20px;
+    padding: .5rem 2rem;
+    margin-top: 2rem;
+}
+
+h1 {
+    color: hsl(24, 5%, 18%);
+    font-size: 2.5rem;
+    margin-top: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+    margin-top: 2rem;
+    margin-bottom: 1.25rem;
+}
+
+::marker,
+td,
+span {
+    font-weight: 600;
+}
+
+h2,
+::marker,
+td {
+    color: hsl(14, 45%, 36%);
+}
+
+h2:not(:first-child) {
+    border-top: 1px solid hsl(30, 18%, 87%);
+    padding-top: 1.5rem;
+}
+
+h3,
+.prep-time li::marker {
+    color: hsl(332, 51%, 32%);
+    font-weight: 700;
+}
+
+@media screen and (min-width: 500px) {
+    .container__img {
+        padding: 2rem;
+        padding-bottom: 0;
+    }
+
+    img {
+        border-radius: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        margin: min(calc((100vw - 768px)/2), 5rem) auto;
+        border-radius: 20px;
+    }
+}

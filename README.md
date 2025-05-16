@@ -14,4 +14,4 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 ## Links
 
 - [Solution page](https://www.frontendmentor.io/solutions/recipe-page-with-basic-htmland-css-ORAiIfaqZf)
-- [Live site](https://risaysky.github.io/Frontend-Mentor---Recipe-page/)
+- [Live site](https://risaysky.github.io/Frontend-Mentor-Recipe-page/)
